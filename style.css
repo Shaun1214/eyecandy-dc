@@ -2,7 +2,12 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background: url("candy.jpg") center/cover no-repeat fixed;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("candy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* HERO */
@@ -67,7 +72,4 @@ footer {
   text-align: center;
   color: #999;
 }
-html, body {
-  background: url("candy.jpg") center center / cover no-repeat fixed !important;
-  margin: 0 !important;
-}
+
