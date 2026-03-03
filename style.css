@@ -197,3 +197,25 @@ html {
 .side-link:hover {
   color: white;
 }
+/* MOBILE OPTIMIZATION */
+@media (max-width: 900px) {
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .sidebar iframe {
+    height: 180px;
+  }
+}
