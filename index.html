@@ -130,7 +130,15 @@
 <script>
 function toggleMenu() {
   const panel = document.getElementById("dropdownPanel");
+  const icon = document.querySelector(".menu-icon");
+
   panel.classList.toggle("active");
+
+  if (panel.classList.contains("active")) {
+    icon.innerHTML = "✕";
+  } else {
+    icon.innerHTML = "☰";
+  }
 }
 </script>
 </body>
