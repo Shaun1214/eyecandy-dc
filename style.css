@@ -7,9 +7,13 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 160px 20px 120px;
+  padding: 180px 20px 140px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 80px auto 40px;
 }
-
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
