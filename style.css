@@ -1,67 +1,10 @@
 body {
   margin: 0;
   background: black;
-  color: white;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
-/* Drip */
 .drip {
   width: 100%;
-  height: 120px;
-  background: linear-gradient(180deg, #8B0000, #ff1a1a);
-  animation: dripMove 3s infinite ease-in-out;
-}
-
-@keyframes dripMove {
-  0% { height: 120px; }
-  50% { height: 150px; }
-  100% { height: 120px; }
-}
-
-/* Sections */
-.section {
-  padding: 80px 20px;
-  text-align: center;
-  animation: fadeUp 1.2s ease forwards;
-  opacity: 0;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Glass */
-.glass {
-  background: rgba(255, 0, 0, 0.08);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 0, 0, 0.3);
-  border-radius: 20px;
-  padding: 40px;
-  margin: 60px auto;
-  max-width: 800px;
-}
-
-/* Button */
-.book-btn {
+  height: 200px;
   background: red;
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  font-size: 18px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.book-btn:hover {
-  background: #ff1a1a;
-  transform: scale(1.05);
 }
