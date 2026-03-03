@@ -6,53 +6,38 @@ body {
 .drip {
   position: relative;
   width: 100%;
-  height: 240px;
+  height: 180px;
   background: linear-gradient(
     to bottom,
     #6e0000 0%,
-    #a30000 30%,
-    #c40000 55%,
+    #a30000 40%,
     #ff1a1a 100%
   );
-  overflow: hidden;
-  box-shadow: inset 0 -20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
 
-/* Main drip body */
+/* Large hanging drip shape */
 .drip::before {
   content: "";
   position: absolute;
-  width: 120%;
-  height: 220px;
-  bottom: -90px;
-  left: -10%;
+  bottom: -120px;  /* THIS makes it hang down */
+  left: 10%;
+  width: 300px;
+  height: 200px;
   background: inherit;
-  border-radius: 50% 50% 45% 55%;
-  box-shadow:
-    inset 0 -25px 40px rgba(0,0,0,0.6),
-    0 20px 40px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  box-shadow: inset 0 -25px 40px rgba(0,0,0,0.6);
 }
 
-/* Highlight shine */
+/* Second drip */
 .drip::after {
   content: "";
   position: absolute;
-  top: 30px;
-  left: 15%;
-  width: 70%;
-  height: 60px;
-  background: rgba(255,255,255,0.25);
+  bottom: -100px;
+  right: 15%;
+  width: 220px;
+  height: 160px;
+  background: inherit;
   border-radius: 50%;
-  filter: blur(25px);
-}
-@keyframes dripWave {
-  0% {
-    border-radius: 45% 55% 60% 40%;
-  }
-  50% {
-    border-radius: 55% 45% 50% 50%;
-  }
-  100% {
-    border-radius: 45% 55% 60% 40%;
-  }
+  box-shadow: inset 0 -20px 30px rgba(0,0,0,0.6);
 }
