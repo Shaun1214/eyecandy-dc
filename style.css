@@ -2,14 +2,8 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background:
-    linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.9)),
-    url("candy.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url("candy.jpg") center/cover no-repeat fixed;
 }
-
 /* HERO */
 .hero {
   text-align: center;
