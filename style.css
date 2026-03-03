@@ -159,12 +159,19 @@ html {
   position: fixed;
   top: 20px;
   left: 20px;
-  font-size: 28px;
+  font-size: 36px;   /* Bigger */
   color: white;
   cursor: pointer;
-  z-index: 2000;   /* Higher than panel */
+  z-index: 2000;
 }
-
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
 /* Dropdown Panel */
 .dropdown-panel {
   position: fixed;
