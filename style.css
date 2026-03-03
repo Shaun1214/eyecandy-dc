@@ -67,3 +67,7 @@ footer {
   text-align: center;
   color: #999;
 }
+html, body {
+  background: url("candy.jpg") center center / cover no-repeat fixed !important;
+  margin: 0 !important;
+}
