@@ -1,17 +1,14 @@
 /* Candy Background Images */
 body {
   margin: 0;
-  background-color: black;
-  background-image: 
-    url("https://pngimg.com/uploads/candy/candy_PNG21.png"),
-    url("https://pngimg.com/uploads/candy/candy_PNG27.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 
-    left 5% top 15%, 
-    right 8% bottom 10%;
-  background-size: 180px, 180px;
-  background-attachment: fixed;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("candy-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .drip {
   position: relative;
