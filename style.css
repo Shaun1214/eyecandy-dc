@@ -154,3 +154,46 @@ html {
     Private appointment-only studio. Exact location provided after booking confirmation.
   </p>
 </section>
+/* Hamburger Icon */
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Dropdown Panel */
+.dropdown-panel {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 280px;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  padding: 80px 20px;
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown-panel.active {
+  left: 0;
+}
+
+.dropdown-panel h3 {
+  margin-top: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.side-link {
+  display: block;
+  color: #ff4d4d;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.side-link:hover {
+  color: white;
+}
