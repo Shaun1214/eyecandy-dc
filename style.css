@@ -100,3 +100,41 @@ html {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
 }
+/* Layout */
+.layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h3 {
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.side-link {
+  display: block;
+  color: #ff4d4d;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.side-link:hover {
+  color: white;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
