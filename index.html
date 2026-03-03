@@ -140,17 +140,12 @@
   </main>
 </div>
 <script>
-function toggleMenu() {
-  const panel = document.getElementById("dropdownPanel");
-  const icon = document.querySelector(".menu-icon");
+function openMenu() {
+  document.getElementById("dropdownPanel").classList.add("active");
+}
 
-  panel.classList.toggle("active");
-
-  if (panel.classList.contains("active")) {
-    icon.innerHTML = "✕";
-  } else {
-    icon.innerHTML = "☰";
-  }
+function closeMenu() {
+  document.getElementById("dropdownPanel").classList.remove("active");
 }
 </script>
 <!-- Sticky Mobile Booking Bar -->
