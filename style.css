@@ -75,20 +75,18 @@ footer {
 }
 
 .gallery {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
   margin-top: 40px;
 }
 
 .gallery img {
-  width: 260px;
-  height: 320px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.7);
-  transition: transform 0.4s ease;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
 .gallery img:hover {
