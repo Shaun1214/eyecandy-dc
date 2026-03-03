@@ -197,3 +197,15 @@ html {
     padding-bottom: 70px;
   }
 }
+/* Dropdown Links */
+.side-link {
+  display: block;            /* Stack vertically */
+  color: #ff1a1a;            /* Red */
+  text-decoration: none;     /* Remove underline */
+  margin: 12px 0;            /* Spacing between */
+  font-weight: 500;
+}
+
+.side-link:hover {
+  color: white;
+}
