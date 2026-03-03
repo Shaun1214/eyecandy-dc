@@ -162,7 +162,7 @@ html {
   font-size: 28px;
   color: white;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 2000;   /* Higher than panel */
 }
 
 /* Dropdown Panel */
@@ -175,9 +175,8 @@ html {
   background: rgba(0,0,0,0.95);
   padding: 80px 20px;
   transition: 0.3s ease;
-  z-index: 999;
+  z-index: 1500;
 }
-
 .dropdown-panel.active {
   left: 0;
 }
