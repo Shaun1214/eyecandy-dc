@@ -1,12 +1,3 @@
 body {
-    margin: 0;
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-.drip {
-    height: 150px;
-    width: 100%;
-    background: red;
+  background: hotpink !important;
 }
