@@ -5,34 +5,65 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* HERO */
 .hero {
   text-align: center;
-  padding: 140px 20px;
+  padding: 160px 20px 120px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  color: #ff4d4d;
+  margin-bottom: 30px;
+}
+
+/* SECTIONS */
 .section {
-  padding: 80px 20px;
-  max-width: 900px;
+  padding: 100px 20px;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
 }
 
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: #dddddd;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* BUTTON */
 .btn {
-  background: #c40000;
+  background: linear-gradient(to right, #8b0000, #ff1a1a);
   color: white;
-  padding: 15px 40px;
+  padding: 15px 45px;
   text-decoration: none;
   border-radius: 50px;
   display: inline-block;
   margin-top: 20px;
+  transition: 0.3s ease;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
 footer {
-  padding: 40px;
+  padding: 60px 20px;
   text-align: center;
+  color: #999;
 }
