@@ -58,3 +58,22 @@
 .gallery img:hover {
   transform: scale(1.05);
 }
+/* Candy Decorations */
+.candy {
+  position: fixed;
+  width: 180px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.candy1 {
+  top: 15%;
+  left: 5%;
+  transform: rotate(-20deg);
+}
+
+.candy2 {
+  bottom: 10%;
+  right: 8%;
+  transform: rotate(15deg);
+}
