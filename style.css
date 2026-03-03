@@ -219,3 +219,34 @@ html {
     height: 180px;
   }
 }
+/* Sticky Mobile Booking */
+.mobile-booking {
+  display: none;
+}
+
+/* Mobile Only */
+@media (max-width: 900px) {
+
+  .mobile-booking {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #8b0000, #ff1a1a);
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+
+  .mobile-booking a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  body {
+    padding-bottom: 70px;
+  }
+}
