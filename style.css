@@ -130,17 +130,16 @@ html {
   transform: translateX(-100%);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;   /* ADD THIS */
   transition: transform 0.4s ease, opacity 0.3s ease;
-  z-index: 9999;
+  z-index: 999;
 }
-<a href="YOUR_GOOGLE_REVIEW_LINK" target="_blank" class="side-link">
-  Review on Google
-  <div class="review-stars">★★★★★ 5.0 Rating</div>
-</a>
+
 .dropdown-panel.active {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;   /* ADD THIS */
 }
 /* MOBILE OPTIMIZATION */
 @media (max-width: 900px) {
