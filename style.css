@@ -120,27 +120,26 @@ html {
   color: white;
   cursor: pointer;
 }/* Dropdown Panel */
-.dropdown-panel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 280px;
-  height: 100vh;
-  background: rgba(0,0,0,0.95);
-  padding: 80px 20px;
-  transform: translateX(-100%);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;   /* ADD THIS */
-  transition: transform 0.4s ease, opacity 0.3s ease;
-  z-index: 4500;
+/* Menu Headings */
+.dropdown-panel h3 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 8px;
 }
 
-.dropdown-panel.active {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;   /* ADD THIS */
+/* Menu Links */
+.side-link {
+  display: block;
+  color: #ff1a1a;   /* red */
+  text-decoration: none;
+  margin: 6px 0 14px 0;
+  font-size: 0.95rem;
+}
+
+.side-link:hover {
+  color: white;
 }
 /* MOBILE OPTIMIZATION */
 @media (max-width: 900px) {
