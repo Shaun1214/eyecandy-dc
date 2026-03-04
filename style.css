@@ -207,3 +207,8 @@ html {
 .side-link:hover {
   color: white;
 }
+.review-stars {
+  font-size: 0.8rem;
+  color: gold;
+  margin-top: 5px;
+}
