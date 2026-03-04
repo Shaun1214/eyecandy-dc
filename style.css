@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background: url("candy.jpg") center/cover no-repeat fixed;
+  background: url("background.jpg") center/cover no-repeat fixed;
 }
 /* HERO */
 .hero {
