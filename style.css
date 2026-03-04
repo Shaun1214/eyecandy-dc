@@ -106,13 +106,11 @@ html {
 
 /* Hamburger Icon */
 .menu-icon {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  font-size: 36px;   /* Bigger */
-  color: white;
+  font-size: 30px;
   cursor: pointer;
-  z-index: 2000;
+  color: white;
+  position: relative;
+  z-index: 4000;
 }
 .close-icon {
   position: absolute;
