@@ -1,254 +1,17 @@
+/* BASE */
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background-color: #000; /* solid black base */
-}
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 180px 20px 140px;
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-              url("background.jpg") center/cover no-repeat;
-  border-radius: 20px;
-  max-width: 1200px;
-  margin: 80px auto 40px;
-}
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+  background-color: #000;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #ff4d4d;
-  margin-bottom: 30px;
-}
-
-/* SECTIONS */
-.section {
-  padding: 100px 20px;
-  max-width: 1200px;
-  margin: 60px auto;
-  text-align: center;
-  border-radius: 20px;
-
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-              url("background.jpg") center/cover no-repeat;
-
-  backdrop-filter: blur(4px);
-}
-
-.section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.section p {
-  color: #dddddd;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: auto;
-}
-
-/* BUTTON */
-.btn {
-  background: linear-gradient(to right, #8b0000, #ff1a1a);
-  color: white;
-  padding: 15px 45px;
-  text-decoration: none;
-  border-radius: 50px;
-  display: inline-block;
-  margin-top: 20px;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* FOOTER */
-footer {
-  padding: 60px 20px;
-  text-align: center;
-  color: #999;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
 html {
   scroll-behavior: smooth;
 }
-.section h3 {
-  margin-top: 40px;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-}
 
-/* Hamburger Icon */
-.menu-icon {
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-  position: relative;
-  z-index: 4000;
-}
-.close-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 32px;
-  color: white;
-  cursor: pointer;
-}/* Dropdown Panel */
-/* Menu Headings */
-.dropdown-panel h3 {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  margin-top: 25px;
-  margin-bottom: 8px;
-}
-
-/* Menu Links */
-.side-link {
-  display: block;
-  color: #ff1a1a;   /* red */
-  text-decoration: none;
-  margin: 6px 0 14px 0;
-  font-size: 0.95rem;
-}
-
-.side-link:hover {
-  color: white;
-}
-/* MOBILE OPTIMIZATION */
-@media (max-width: 900px) {
-
-  .layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    position: relative;
-    min-height: auto;
-    padding: 20px;
-  }
-
-  .main-content {
-    padding: 10px;
-  }
-
-  .sidebar iframe {
-    height: 180px;
-  }
-}
-/* Sticky Mobile Booking */
-.mobile-booking {
-  display: none;
-}
-
-/* Mobile Only */
-@media (max-width: 900px) {
-
-  .mobile-booking {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to right, #8b0000, #ff1a1a);
-    text-align: center;
-    padding: 15px 0;
-    z-index: 1000;
-  }
-
-  .mobile-booking a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  body {
-    padding-bottom: 70px;
-  }
-}
-/* Dropdown Links */
-.side-link {
-  display: block;            /* Stack vertically */
-  color: #ff1a1a;            /* Red */
-  text-decoration: none;     /* Remove underline */
-  margin: 12px 0;            /* Spacing between */
-  font-weight: 500;
-}
-
-.side-link:hover {
-  color: white;
-}
-
-/* Mobile Background Adjustment */
-@media (max-width: 900px) {
-  body {
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url("background.jpg") center top / cover no-repeat;
-    background-attachment: scroll;
-  }
-}
-@media (max-width: 900px) {
-  .hero {
-    padding: 120px 20px 100px;
-    background-position: center;
-    background-size: cover;
-  }
-}
-/* FAQ Hover Reveal */
-
-.faq-item {
-  margin: 25px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 15px;
-}
-
-.faq-question {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: white;
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  color: #ccc;
-  transition: max-height 0.4s ease;
-}
-
-.faq-item:hover .faq-answer {
-  max-height: 200px;
-  margin-top: 10px;
-}
-/* Top Header */
+/* HEADER */
 
 .top-header {
   position: sticky;
@@ -276,23 +39,217 @@ html {
   align-items: center;
   gap: 15px;
 }
-.search-bar {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  padding: 6px 10px;
-  border-radius: 20px;
-  color: white;
+
+.site-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .cart-icon {
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
 }
-.site-logo {
-  height: 70px;
-  object-fit: contain;
+
+/* HAMBURGER */
+
+.menu-icon {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
-.site-logo {
-  height: 70px;
-  object-fit: contain;
+
+/* DROPDOWN PANEL */
+
+.dropdown-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  padding: 80px 25px;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.35s ease, opacity 0.25s ease;
+  z-index: 5000;
+}
+
+.dropdown-panel.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* CLOSE BUTTON */
+
+.close-icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MENU HEADINGS */
+
+.dropdown-panel h3 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+/* MENU LINKS */
+
+.side-link {
+  display: block;
+  color: #ff1a1a;
+  text-decoration: none;
+  margin: 6px 0 14px;
+}
+
+.side-link:hover {
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  padding: 180px 20px 140px;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("background.jpg") center/cover no-repeat;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 80px auto 40px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ff4d4d;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+  border-radius: 20px;
+
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("background.jpg") center/cover no-repeat;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.section p {
+  color: #dddddd;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+
+.btn {
+  background: linear-gradient(to right, #8b0000, #ff1a1a);
+  color: white;
+  padding: 15px 45px;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* FAQ */
+
+.faq-item {
+  margin: 25px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 15px;
+}
+
+.faq-question {
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  color: #ccc;
+  transition: max-height 0.4s ease;
+}
+
+.faq-item:hover .faq-answer {
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 60px 20px;
+  text-align: center;
+  color: #999;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 120px 20px 100px;
+  }
+
+  .mobile-booking {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #8b0000, #ff1a1a);
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+
+  body {
+    padding-bottom: 70px;
+  }
+
 }
