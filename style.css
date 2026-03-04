@@ -291,3 +291,7 @@ html {
   font-size: 20px;
   cursor: pointer;
 }
+.site-logo {
+  height: 70px;
+  object-fit: contain;
+}
