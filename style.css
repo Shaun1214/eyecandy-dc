@@ -30,12 +30,15 @@ body {
 /* SECTIONS */
 .section {
   padding: 100px 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 60px auto;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  backdrop-filter: blur(8px);
+
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("background.jpg") center/cover no-repeat;
+
+  backdrop-filter: blur(4px);
 }
 
 .section h2 {
