@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ | EyeCandy DC Waxing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently asked questions about DC waxing and brow lamination services at EyeCandy private studio.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Hamburger -->
+<div class="menu-icon" onclick="openMenu()">☰</div>
+
+<!-- Dropdown Panel -->
+<div class="dropdown-panel" id="dropdownPanel">
+  <div class="close-icon" onclick="closeMenu()">✕</div>
+
+  <h3>Navigation</h3>
+  <a href="index.html" class="side-link">Home</a>
+  <a href="faq.html" class="side-link">FAQ</a>
+</div>
+
+<header class="hero">
+  <h1>Frequently Asked Questions</h1>
+  <p>Everything you need to know before your appointment.</p>
+  <a href="index.html" class="btn">Back to Home</a>
+</header>
+
+<section class="section faq">
+
+  <div class="faq-item">
+    <button class="faq-question">Can I bring a guest?</button>
+    <div class="faq-answer">
+      <p>Appointments are reserved for the scheduled client only to maintain a private and relaxing environment.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is a deposit required?</button>
+    <div class="faq-answer">
+      <p>Yes. A non-refundable deposit is required to secure all appointments and is applied toward your service total.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I get waxed during my menstrual cycle?</button>
+    <div class="faq-answer">
+      <p>Yes, waxing services can be performed during menstruation. A tampon must be worn during Brazilian or bikini services. Please note that skin may be more sensitive during this time.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How should I prepare for waxing?</button>
+    <div class="faq-answer">
+      <p>Avoid retinol, exfoliants, and active skincare products on the treatment area 5–7 days prior to your appointment.</p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 EyeCandy | DC Waxing Studio</p>
+</footer>
+
+<script>
+function openMenu() {
+  document.getElementById("dropdownPanel").classList.add("active");
+}
+function closeMenu() {
+  document.getElementById("dropdownPanel").classList.remove("active");
+}
+
+const questions = document.querySelectorAll(".faq-question");
+questions.forEach(q => {
+  q.addEventListener("click", () => {
+    q.nextElementSibling.classList.toggle("show");
+  });
+});
+</script>
+
+<!-- SEO FAQ Schema -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [{
+   "@type": "Question",
+   "name": "Can I bring a guest?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Appointments are reserved for the scheduled client only to maintain a private environment."
+   }
+ },{
+   "@type": "Question",
+   "name": "Is a deposit required?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. A non-refundable deposit is required to secure appointments and is applied toward the service total."
+   }
+ },{
+   "@type": "Question",
+   "name": "Can I get waxed during my menstrual cycle?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, waxing can be performed during menstruation. A tampon must be worn during Brazilian or bikini services."
+   }
+ }]
+}
+</script>
+
+</body>
+</html>
