@@ -251,3 +251,40 @@ html {
   max-height: 200px;
   margin-top: 10px;
 }
+/* Top Header */
+
+.top-header {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  z-index: 3000;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
