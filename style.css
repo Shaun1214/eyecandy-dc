@@ -253,3 +253,32 @@ footer {
   }
 
 }
+.mobile-call {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+  .mobile-call {
+    display: block;
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 12px 0;
+    z-index: 1001;
+  }
+
+  .mobile-call a {
+    color: #ff1a1a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+}
+.mobile-booking a {
+  color: white;
+  text-decoration: none;
+}
