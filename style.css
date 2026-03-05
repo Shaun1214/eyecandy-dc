@@ -205,7 +205,13 @@ html {
 
 .faq-question {
   font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
   cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
 }
 
 .faq-answer {
@@ -213,6 +219,7 @@ html {
   overflow: hidden;
   color: #ccc;
   transition: max-height 0.4s ease;
+  line-height: 1.6;
 }
 
 .faq-item.active .faq-answer {
