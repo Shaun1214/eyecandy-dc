@@ -3,7 +3,107 @@
 <head>
 
 <meta charset="UTF-8">
+<title>Shop | EyeCandy</title<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
 <title>Shop | EyeCandy</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="top-header">
+
+<div class="header-left">
+<div class="menu-icon" onclick="openMenu()">☰</div>
+</div>
+
+<div class="header-logo">
+<a href="index.html">
+<img src="logo.png" alt="EyeCandy Logo" class="site-logo">
+</a>
+</div>
+
+<div class="header-right">
+
+<a href="shop.html" class="cart-icon">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+</div>
+
+</header>
+
+
+<!-- Dropdown Panel -->
+
+<div class="dropdown-panel" id="dropdownPanel">
+
+<div class="close-icon" onclick="closeMenu()">✕</div>
+
+<h3>Shop Products</h3>
+<a href="shop.html" class="side-link">Shop</a>
+
+<h3>Services</h3>
+<a href="services.html" class="side-link">Waxing Services</a>
+
+<h3>Information</h3>
+<a href="faq.html" class="side-link">FAQ</a>
+
+</div>
+
+
+<header class="hero">
+
+<h1>EyeCandy Aftercare</h1>
+
+<p>Professional brow aftercare products launching soon.</p>
+
+</header>
+
+
+<section class="section">
+
+<h2>Coming Soon</h2>
+
+<p>
+EyeCandy will soon offer professional brow and waxing aftercare products recommended for maintaining flawless results between appointments.
+</p>
+
+<a href="services.html" class="btn">
+View Services
+</a>
+
+</section>
+
+
+<footer>
+<p>© 2026 EyeCandy | DC Waxing Studio</p>
+</footer>
+
+
+<script>
+
+function openMenu(){
+document.getElementById("dropdownPanel").classList.add("active");
+}
+
+function closeMenu(){
+document.getElementById("dropdownPanel").classList.remove("active");
+}
+
+</script>
+
+</body>
+</html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
