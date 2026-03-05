@@ -216,7 +216,7 @@ html {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 500px;
   margin-top: 10px;
 }
 /* FAQ Question Layout */
