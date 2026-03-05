@@ -215,7 +215,7 @@ html {
   transition: max-height 0.4s ease;
 }
 
-.faq-item:hover .faq-answer {
+.faq-item.active .faq-answer {
   max-height: 200px;
   margin-top: 10px;
 }
