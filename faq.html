@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FAQ | EyeCandy DC Waxing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Frequently asked questions about DC waxing and brow lamination services at EyeCandy private studio.">
+<meta charset="UTF-8">
+<title>FAQ | EyeCandy DC Waxing</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Frequently asked questions about DC waxing and brow lamination services.">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+
 <header class="top-header">
 
-  <div class="header-left">
-    <div class="menu-icon" onclick="openMenu()">☰</div>
-  </div>
-
-  <div class="header-logo">
-  <a href="index.html">
-    <img src="logo.png" alt="EyeCandy Logo" class="site-logo">
-  </a>
+<div class="header-left">
+<div class="menu-icon" onclick="openMenu()">☰</div>
 </div>
 
-  <div class="header-right">
-    
-    <div class="cart-icon">
-  <i class="fas fa-shopping-cart"></i>
+<div class="header-logo">
+<a href="index.html">
+<img src="logo.png" alt="EyeCandy Logo" class="site-logo">
+</a>
 </div>
-  </div>
+
+<div class="header-right">
+<div class="cart-icon">
+<i class="fas fa-shopping-cart"></i>
+</div>
+</div>
 
 </header>
-<!-- Hamburger -->
 
-
-<!-- Dropdown Panel -->
 <div class="dropdown-panel" id="dropdownPanel">
 
-  <div class="close-icon" onclick="closeMenu()">✕</div>
+<div class="close-icon" onclick="closeMenu()">✕</div>
 
-  <h3>Shop Products</h3>
-  <a href="#" class="side-link">Brow Conditioner</a>
-  <a href="#" class="side-link">Aftercare Kit</a>
+<h3>Shop Products</h3>
+<a href="#" class="side-link">Brow Conditioner</a>
+<a href="#" class="side-link">Aftercare Kit</a>
 
-  <h3>Services</h3>
-  <a href="services.html" class="side-link">Waxing Services</a>
+<h3>Services</h3>
+<a href="services.html" class="side-link">Waxing Services</a>
 
-  <h3>Leave a Review</h3>
-  <a href="YOUR_GOOGLE_REVIEW_LINK" target="_blank" class="side-link">Review on Google</a>
-
-  <h3>Information</h3>
-  <a href="faq.html" class="side-link">FAQ</a>
+<h3>Information</h3>
+<a href="faq.html" class="side-link">FAQ</a>
 
 </div>
 
- <header class="hero">
-  <h1>Frequently Asked Questions</h1>
-  <p>Everything you need to know before your appointment.</p>
-  <p>Questions before your appointment?</p>
+<header class="hero">
+<h1>Frequently Asked Questions</h1>
+
+<p>Questions before your appointment?</p>
 
 <a href="tel:2026791606" class="btn">Call</a>
+<a href="mailto:eyecandybrowspro@gmail.com" class="btn">Email</a>
 
-<a href="mailto:eyecandybrowspro@gmail.com" class="btn">Email Us</a>
 </header>
 
 <section class="section faq">
 
-  <div class="faq-item">
+<div class="faq-item">
 <div class="faq-question">
-  Can I bring a guest?
-  <span class="faq-arrow">▼</span>
+Can I bring a guest?
+<span class="faq-arrow">▼</span>
 </div>
 <div class="faq-answer">
 Appointments are reserved for the scheduled client only.
@@ -78,97 +73,69 @@ Appointments are reserved for the scheduled client only.
 
 <div class="faq-item">
 <div class="faq-question">
-  Is a deposit required?
-  <span class="faq-arrow">▼</span>
+Is a deposit required?
+<span class="faq-arrow">▼</span>
 </div>
 <div class="faq-answer">
-Yes. A non-refundable deposit is required to secure your appointment.
+Yes. A non refundable deposit is required to secure appointments.
 </div>
 </div>
 
 <div class="faq-item">
 <div class="faq-question">
-  Can I get waxed during my menstrual cycle?
-  <span class="faq-arrow">▼</span>
+Can I get waxed during my menstrual cycle?
+<span class="faq-arrow">▼</span>
 </div>
 <div class="faq-answer">
-Yes. A tampon must be worn for Brazilian or bikini services.
+Yes. A tampon must be worn during Brazilian or bikini services.
 </div>
 </div>
 
 <div class="faq-item">
 <div class="faq-question">
-  What skincare should I avoid before waxing?
-  <span class="faq-arrow">▼</span>
+What skincare should I avoid?
+<span class="faq-arrow">▼</span>
 </div>
 <div class="faq-answer">
-Avoid retinol, exfoliants, and active skincare 14 days before your appointment.
+Avoid retinol and exfoliating skincare 14 days before waxing.
 </div>
 </div>
- 
+
 </section>
+
 <footer>
-  <p>© 2026 EyeCandy | DC Waxing Studio</p>
+<p>© 2026 EyeCandy | DC Waxing Studio</p>
 </footer>
 
 <script>
-function openMenu() {
-  document.getElementById("dropdownPanel").classList.add("active");
-}
-function closeMenu() {
-  document.getElementById("dropdownPanel").classList.remove("active");
+
+function openMenu(){
+document.getElementById("dropdownPanel").classList.add("active");
 }
 
-
-</script>
-
-<!-- SEO FAQ Schema -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [{
-   "@type": "Question",
-   "name": "Can I bring a guest?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Appointments are reserved for the scheduled client only to maintain a private environment."
-   }
- },{
-   "@type": "Question",
-   "name": "Is a deposit required?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Yes. A non-refundable deposit is required to secure appointments and is applied toward the service total."
-   }
- },{
-   "@type": "Question",
-   "name": "Can I get waxed during my menstrual cycle?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Yes, waxing can be performed during menstruation. A tampon must be worn during Brazilian or bikini services."
-   }
- }]
+function closeMenu(){
+document.getElementById("dropdownPanel").classList.remove("active");
 }
-</script>
-  <script>
-const faqQuestions = document.querySelectorAll(".faq-question");
 
-faqQuestions.forEach(question => {
-  question.addEventListener("click", () => {
+const faqQuestions=document.querySelectorAll(".faq-question");
 
-    const item = question.parentElement;
+faqQuestions.forEach(question=>{
+question.addEventListener("click",()=>{
 
-    document.querySelectorAll(".faq-item").forEach(el => {
-      if (el !== item) {
-        el.classList.remove("active");
-      }
-    });
+const item=question.parentElement;
 
-    item.classList.toggle("active");
-
-  });
+document.querySelectorAll(".faq-item").forEach(el=>{
+if(el!==item){
+el.classList.remove("active");
+}
 });
+
+item.classList.toggle("active");
+
+});
+});
+
 </script>
+
 </body>
 </html>
