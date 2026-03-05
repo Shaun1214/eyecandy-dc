@@ -151,7 +151,17 @@ const faqQuestions = document.querySelectorAll(".faq-question");
 
 faqQuestions.forEach(question => {
   question.addEventListener("click", () => {
-    question.parentElement.classList.toggle("active");
+
+    const item = question.parentElement;
+
+    document.querySelectorAll(".faq-item").forEach(el => {
+      if (el !== item) {
+        el.classList.remove("active");
+      }
+    });
+
+    item.classList.toggle("active");
+
   });
 });
 </script>
