@@ -219,7 +219,28 @@ html {
   max-height: 200px;
   margin-top: 10px;
 }
+/* FAQ Question Layout */
 
+.faq-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Arrow animation */
+
+.faq-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+}
 /* FOOTER */
 
 footer {
