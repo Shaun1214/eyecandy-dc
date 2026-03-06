@@ -317,11 +317,28 @@ footer {
   color: white;
   text-decoration: none;
 }
-If you want, I can also generate a real luxury EC monogram logo you can use for:
+/* MONOGRAM LOGO */
 
-• website
-• tweezers engraving
-• Instagram
-• packaging
+.logo-monogram{
+font-family:'Playfair Display',serif;
+font-weight:700;
+font-size:38px;
+letter-spacing:1px;
+text-decoration:none;
+position:relative;
+display:inline-block;
+}
 
-And it will match your black/red
+.logo-e{
+color:white;
+}
+
+.logo-c{
+color:#ff1a1a;
+margin-left:-10px;
+text-shadow:0 0 10px rgba(255,0,0,.6);
+}
+
+.logo-monogram:hover{
+opacity:.85;
+}
