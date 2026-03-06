@@ -179,6 +179,7 @@ transition:.3s;
 box-shadow:0 10px 30px rgba(0,0,0,.6);
 display:inline-block;
 margin-top:20px;
+max-width:280px;
 }
 
 .btn:hover{
@@ -233,17 +234,6 @@ box-shadow:0 20px 40px rgba(0,0,0,.7);
   max-height: 500px;
   margin-top: 10px;
 }
-/* FAQ Question Layout */
-
-.faq-question {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /* Arrow animation */
 
@@ -255,6 +245,7 @@ box-shadow:0 20px 40px rgba(0,0,0,.7);
 .faq-item.active .faq-arrow {
   transform: rotate(180deg);
 }
+
 /* FOOTER */
 
 footer {
@@ -265,58 +256,71 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 900px) {
-
-  .hero {
-    padding: 120px 20px 100px;
-  }
-
-  .mobile-booking {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to right, #8b0000, #ff1a1a);
-    text-align: center;
-    padding: 15px 0;
-    z-index: 1000;
-  }
-
-  body {
-    padding-bottom: 70px;
-  }
-
-}
-.mobile-call {
-  display: none;
+.mobile-booking{
+display:none;
 }
 
-@media (max-width: 900px) {
+.mobile-call{
+display:none;
+}
 
-  .mobile-call {
-    display: block;
-    position: fixed;
-    bottom: 70px;
-    left: 0;
-    width: 100%;
-    background: black;
-    text-align: center;
-    padding: 12px 0;
-    z-index: 1001;
-  }
+@media (max-width:900px){
 
-  .mobile-call a {
-    color: #ff1a1a;
-    text-decoration: none;
-    font-weight: 600;
-  }
+.hero{
+padding:120px 20px 100px;
+}
+
+/* BOOK BUTTON */
+
+.mobile-booking{
+display:block;
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:linear-gradient(to right,#8b0000,#ff1a1a);
+text-align:center;
+padding:16px 0;
+z-index:1000;
+}
+
+.mobile-booking a{
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:1rem;
+}
+
+/* CALL BUTTON */
+
+.mobile-call{
+display:block;
+position:fixed;
+bottom:60px;
+left:0;
+width:100%;
+background:#000;
+text-align:center;
+padding:12px 0;
+border-top:1px solid rgba(255,255,255,.1);
+z-index:999;
+}
+
+.mobile-call a{
+color:#ff1a1a;
+text-decoration:none;
+font-weight:600;
+font-size:.95rem;
+}
+
+/* page spacing */
+
+body{
+padding-bottom:120px;
+}
 
 }
-.mobile-booking a {
-  color: white;
-  text-decoration: none;
-}
+
 /* MONOGRAM LOGO */
 
 .logo-monogram{
