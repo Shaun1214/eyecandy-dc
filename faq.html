@@ -122,7 +122,31 @@ function closeMenu(){
 document.getElementById("dropdownPanel").classList.remove("active");
 }
 
-</script>
 
+/* FAQ Accordion */
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+
+question.addEventListener("click", () => {
+
+const item = question.parentElement;
+
+document.querySelectorAll(".faq-item").forEach(el => {
+
+if(el !== item){
+el.classList.remove("active");
+}
+
+});
+
+item.classList.toggle("active");
+
+});
+
+});
+
+</script>
 </body>
 </html>
